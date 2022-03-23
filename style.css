@@ -7,10 +7,23 @@ ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
+    font-size: small;
 }
 
 li {
-    text-align: center;
+    display: inline;
+    
+}
+
+li a {
+    text-decoration: none;
+    padding: 5px
+}
+
+.logo-text {
+    text-align: left;
+    text-transform: capitalize;
+
 }
 
 .active {
@@ -18,5 +31,10 @@ li {
 }
 
 h1 {
-    text-align: center;
+    padding-top: 150px;
+}
+
+.subtitle {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
 }
