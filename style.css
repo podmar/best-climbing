@@ -1,10 +1,22 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
 ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
 }
 
+li {
+    text-align: center;
+}
+
 .active {
-    font-style: italic;
-    color: green;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
 }
