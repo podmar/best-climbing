@@ -38,3 +38,10 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
 }
+
+img {
+    padding-top: 80px;
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+}
