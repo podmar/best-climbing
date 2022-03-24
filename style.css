@@ -72,3 +72,35 @@ td {
     background-color:rgba(194, 200, 206, 0.226);
     color: rgba(95, 95, 95, 0.63);
 }
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.column-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.column-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+label[for] {
+    text-align: left;
+    font-size: smaller;
+
+}
+
+p.label {
+    text-align: left;
+    font-size: smaller;
+}
+
+input {
+    align-items: left;
+    text-align: left;
+    font-size: smaller;
+}
