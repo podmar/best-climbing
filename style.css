@@ -46,3 +46,29 @@ img {
     object-fit: cover;
     border-radius: 3%;
 }
+
+table {
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    border: 3px solid;
+    border-collapse: collapse;
+    border-color: white;
+    padding: 10px;
+    text-align: left;
+    background-color: rgba(155, 156, 156, 0.288);
+    color: rgb(95, 95, 95);
+}
+
+td {
+    border: 3px solid;
+    border-collapse: collapse;
+    border-color: white;
+    padding: 10px;
+    text-align: left;
+    background-color:rgba(194, 200, 206, 0.226);
+    color: rgba(95, 95, 95, 0.63);
+}
