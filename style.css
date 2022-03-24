@@ -37,10 +37,10 @@ h1 {
 .subtitle {
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
+    padding-bottom: 80px;
 }
 
 img {
-    padding-top: 80px;
     width: 250px;
     height: 180px;
     object-fit: cover;
