@@ -15,5 +15,82 @@
         <li class="active">Register</li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
+    <h1>Register</h1>
+    <p class="subtitle">Register for our newsletter and receive relevant news on new climbing locations that match your level and interests.</p>
+
+    <form action="">
+        <div>
+            <label for="name">Enter your first name: </label>
+            <input type="text" id="name" placeholder="Enter your first name">
+        </div>
+
+        <div>
+            What news would you like receive?
+            <div><input type="checkbox" id="all_new"><label for="all_new">all new locations</label></div>
+            <div><input type="checkbox" id="nearby"><label for="nearby">only crags nearby me</label></div>
+            <div><input type="checkbox" id="fit_level"><label for="fit_level">crags that fit my level</label></div>
+            <div><input type="checkbox" id="fit_interests"><label for="fit_interests">crags that match my interests</label></div>
+        </div>
+
+        <div>
+            How hard do you climb?
+            <div><input type="radio" id="beginner" name="level" value="beginner"><label for="beginner">I climb for fun</label></div>
+            <div><input type="radio" id="intermediate" name="level" value="intermediate"><label for="intermediate">I climb hard</label></div>
+            <div><input type="radio" id="advanced" name="level" value="advanced"><label for="advanced">I am a machine</label></div>
+        </div>
+
+        <div>
+            <label for="email">Enter your email address:</label>
+            <input type="email" id="email" placeholder="Enter your email address">
+        </div>
+
+        <div>
+            What type of climbing are you up for?
+            <div><input type="checkbox" id="trad"><label for="trad">trad / mixed</label></div>
+            <div><input type="checkbox" id="alpine"><label for="alpine">alpine</label></div>
+            <div><input type="checkbox" id="sports"><label for="sports">sports</label></div>
+            <div><input type="checkbox" id="multipitch"><label for="multipitch">multipitch</label></div>
+            <div><input type="checkbox" id="ferrata"><label for="ferrata">via ferrata</label></div>
+        </div>
+        
+        <div>
+            <label for="location">Select your location: </label>
+            <select name="location" id="location">
+                <option value="Croatia">Croatia</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Estonia">Estonia</option>
+                <option value="Finland">Finland</option>
+                <option value="Germany">Germany</option>
+                <option value="Greece">Greece</option>
+                <option value="Iceland">Icaland</option>
+                <option value="Italy">Italy</option>
+                <option value="Norway">Norway</option>
+                <option value="Poland">Poland</option>
+                <option value="Spain">Spain</option>
+                <option value="Other">Other</option>
+                <option value="Outside of Europe">Outside of Europe</option>
+            </select>
+        </div>
+        
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+    <h2>Terms & conditions</h2>
+
+    <ol>
+        <li>We are storing some of your data
+            <ol>
+                <li>but we will not use it for any other purpose than sharing news you are interested in </li>
+                <li>and we will not share it with any other entity
+                    <ul>
+                        <li>whether they pay or not. </li>
+                    </ul>
+                </li>
+            </ol>
+        </li>
+    </ol>
+
 </body>
 </html>
