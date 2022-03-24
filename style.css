@@ -81,6 +81,7 @@ td {
 .column-1 {
     display: flex;
     flex-direction: column;
+    text-align: left;
 }
 
 .column-2 {
@@ -99,8 +100,10 @@ p.label {
     font-size: smaller;
 }
 
+/*
 input {
-    align-items: left;
+    align-items:flex-start;
     text-align: left;
     font-size: smaller;
-}
+} 
+*/
