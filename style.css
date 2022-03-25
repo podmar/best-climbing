@@ -75,13 +75,15 @@ td {
 
 .flex-container {
     display: flex;
+    /* the below sets the 2 blocks on the center of the page */
     justify-content: center;
 }
 
 .column-1 {
     display: flex;
     flex-direction: column;
-    text-align: left;
+    /* does nothing */
+    /* text-align: left; */
 }
 
 .column-2 {
@@ -90,7 +92,8 @@ td {
 }
 
 label[for] {
-    text-align: left;
+    /* text-align: left; */
+    /* makes the text in the 2 columns smaller */
     font-size: smaller;
 
 }
@@ -100,10 +103,10 @@ p.label {
     font-size: smaller;
 }
 
-/*
+/* 
 input {
     align-items:flex-start;
     text-align: left;
     font-size: smaller;
-} 
-*/
+}  */
+
