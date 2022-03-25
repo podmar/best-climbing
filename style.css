@@ -78,17 +78,21 @@ td {
     /* the below sets the 2 blocks on the center of the page */
     justify-content: center;
 }
-
+/* 
 .column-1 {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    
     /* does nothing */
     /* text-align: left; */
-}
+} */
 
 .column-2 {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+
 }
 
 label[for] {
@@ -101,6 +105,21 @@ label[for] {
 p.label {
     text-align: left;
     font-size: smaller;
+}
+
+div.tick-box {
+    display: flex;
+    flex-direction:row
+}
+
+div>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+div>div>div {
+    display: flex;
 }
 
 /* 
