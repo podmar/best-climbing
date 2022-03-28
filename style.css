@@ -88,7 +88,8 @@ td {
     /* setting up level 1 flex container */
     display: flex;
     /* the below sets the 2 blocks apart fromm each other with a space between */
-    justify-content:space-between;
+    justify-content:center;
+    gap: 10%;
 }
 
 /* setting up 1/2 level 2 flex container into a column */
