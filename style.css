@@ -109,8 +109,8 @@ td {
 /* makes the text in the labels smaller (checkboxes, radio etc) */
 label {
     font-size: smaller;
-    /* the below moves the one last line in checkbox question about type of news to the left*/
-    text-align: left; 
+    /* the below moves the one last line in checkbox question about type of news to the left -> commented out after adding a p inside the label*/
+    /* text-align: left;  */
 }
 
 /* makes the text in the paragraph labels smaller and aligns it to the left (what news, what type of climbing etc) */
@@ -138,8 +138,21 @@ div.drop-down {
     align-items: flex-start; 
 }
 
+/* formats the location of the submit button */
 div.submit {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+}
+
+li.terms {
+    font-size: x-small;
+    text-align: left;
+}
+
+h2.terms {
+    text-align: left;
+    font-size: smaller;
+    padding-top: 20px;
+    padding-bottom: 0px;
 }
