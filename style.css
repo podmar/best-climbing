@@ -76,56 +76,61 @@ td {
 .flex-container {
     /* setting up level 1 flex container */
     display: flex;
-    /* the below sets the 2 blocks on the center of the page */
-    justify-content: center;
+    /* the below sets the 2 blocks apart fromm each other with a space between */
+    justify-content:space-between;
 }
 
-/* setting up 1/2 level 2 flex container
+/* setting up 1/2 level 2 flex container into a column */
 .column-1 {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-} */
+    /* align-content: space-between; does nothing*/
+} 
 
-/* setting up 1/2 level 2 flex container
-
+/* setting up 1/2 level 2 flex container into a column */
 .column-2 {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-
+    /* align-content: space-between; does nothing */
 }
-*/
 
 /* makes the text in the labels smaller (checkboxes, radio etc) */
 label {
     font-size: smaller;
+    /* text-align: left; -> not doing anything*/
 }
 
-/* makes the text in the paragraph labels smaller (what news, what type of climbing etc) */
+/* makes the text in the paragraph labels smaller and aligns it to the left (what news, what type of climbing etc) */
 p.label {
     font-size: smaller;
+    text-align: left;
 }
 
+/* aligns 2 text inputs to the left */
+div.text-input {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* lever 4, aligns the tick-boxes in columns */
 div.tick-box {
     display: flex;
-    flex-direction:row
+    flex-direction:row;
 }
 
-div>div {
+/* formats the drop down choice quistion */
+div.drop-down {
+    display: flex;
+    /* align-items: flex-start;  */
+}
+
+div.submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+/* div div div {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
-}
-
-div>div>div {
-    display: flex;
-}
-
-/* 
-input {
-    align-items:flex-start;
-    text-align: left;
-    font-size: smaller;
-}  */
-
+} */
