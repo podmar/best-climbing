@@ -121,7 +121,8 @@ div.tick-box {
 /* formats the drop down choice quistion */
 div.drop-down {
     display: flex;
-    /* align-items: flex-start;  */
+    flex-direction: column;
+    align-items: flex-start; 
 }
 
 div.submit {
