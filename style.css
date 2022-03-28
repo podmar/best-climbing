@@ -1,6 +1,6 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+    /* text-align: center; */
 }
 
 div.nav-bar {
@@ -41,14 +41,48 @@ li.active {
 
 }
 
-h1 {
-    padding-top: 140px;
+a:visited {
+    color: inherit;
 }
+
+a:hover {
+    background-color: rgba(194, 200, 206, 0.226);
+    border-radius: 10%;
+}
+
+a:active {
+    color: rgb(95, 95, 95);
+    background-color: rgba(207, 248, 235, 0.877);
+}
+
+/* GRID */
+
+div.grid {
+    display: grid;
+    grid-template-rows: 2vh 49vh 49vh;
+    grid-template-areas: "nav", "intro", "photos";
+}
+
+div.intro {
+    display: grid;
+    grid-area: intro;
+}
+
+div.photos {
+    display: grid;
+    grid-area: photos;
+}
+
+/* END OF GRID */
+
+/* h1 {
+    padding-top: 140px;
+} */
 
 .subtitle {
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
-    padding-bottom: 80px;
+    /* padding-bottom: 80px; */
 }
 
 img {
