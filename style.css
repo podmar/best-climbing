@@ -3,35 +3,46 @@
     text-align: center;
 }
 
-ul {
+div.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    gap: 15%;
+}
+
+ul.nav-bar {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
     font-size: small;
 }
 
-li {
+li.nav-bar {
     display: inline;
-    
 }
 
-li a {
+li.nav-bar a {
     text-decoration: none;
     padding: 5px
 }
 
-.logo-text {
+p.logo-text {
+    margin: 0px;
+    padding: 0px;
+    font-size: small;
     text-align: left;
-    text-transform: capitalize;
-
+    text-transform: uppercase;
 }
 
-.active {
+li.active {
+    display: inline;
     font-weight: bold;
+    padding: 5px
+
 }
 
 h1 {
-    padding-top: 150px;
+    padding-top: 140px;
 }
 
 .subtitle {
