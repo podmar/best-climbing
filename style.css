@@ -3,11 +3,25 @@
     /* text-align: center; */
 }
 
+/* FORMATTING THE LOGO TEXT */
+.logo {
+    grid-area: "logo";
+}
+
+p.logo-text {
+    margin: 0px;
+    padding: 0px;
+    font-size: small;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* FORMATTING THE NAV BAR */
 div.nav-bar {
+    grid-area: "nav";
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
-    gap: 15%;
+    justify-content: center;
 }
 
 ul.nav-bar {
@@ -26,19 +40,10 @@ li.nav-bar a {
     padding: 5px
 }
 
-p.logo-text {
-    margin: 0px;
-    padding: 0px;
-    font-size: small;
-    text-align: left;
-    text-transform: uppercase;
-}
-
 li.active {
     display: inline;
     font-weight: bold;
     padding: 5px
-
 }
 
 a:visited {
@@ -55,25 +60,37 @@ a:active {
     background-color: rgba(207, 248, 235, 0.877);
 }
 
-/* GRID */
+/* GRID MAIN PAGE */
 
-div.grid {
+.wrapper {
     display: grid;
-    grid-template-rows: 2vh 49vh 49vh;
-    grid-template-areas: "nav", "intro", "photos";
+    grid-template-rows: 1fr 15fr 15fr ;
+    grid-template-columns: 2fr 8fr;
+    grid-template-areas: "logo nav" "intro intro" "photos photos";
+    /* grid gap not working */
+    /* grid-gap: 20em; */
 }
 
 div.intro {
-    display: grid;
     grid-area: intro;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    /* background-color: aquamarine; */
 }
 
 div.photos {
-    display: grid;
     grid-area: photos;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    row-gap: 50px;
+    /* background-color: bisque; */
 }
 
-/* END OF GRID */
+/* INDEX / MAIN PAGE FORMATTING */
 
 /* h1 {
     padding-top: 140px;
@@ -86,11 +103,13 @@ div.photos {
 }
 
 img {
-    width: 250px;
-    height: 180px;
+    width: 230px;
+    height: 150px;
     object-fit: cover;
     border-radius: 3%;
 }
+
+/* TABLE / SPECIAL PAGE FORMATTING */
 
 table {
     padding-top: 50px;
@@ -117,6 +136,8 @@ td {
     background-color:rgba(194, 200, 206, 0.226);
     color: rgba(95, 95, 95, 0.63);
 }
+
+/* REGISTRATION PAGE FORMATTING */
 
 .flex-container {
     /* setting up level 1 flex container */
