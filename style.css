@@ -1,5 +1,6 @@
 * {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family:Arial, Helvetica, sans-serif;
     /* text-align: center; */
 }
 
@@ -241,4 +242,17 @@ h2.terms {
     font-size: smaller;
     padding-top: 20px;
     padding-bottom: 0px;
+}
+
+/* FORMATTING CONTACT */
+
+.wrapper-contact {
+    display: grid;
+    grid-template-rows: 2fr 15fr 30fr ;
+    grid-template-columns: 2fr 8fr;
+    grid-template-areas: "logo nav" "intro intro" "contact-info contact-info"; 
+}
+
+div.contact-info {
+    grid-area: "contact-info";
 }
