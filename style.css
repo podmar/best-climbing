@@ -60,7 +60,7 @@ a:active {
     background-color: rgba(207, 248, 235, 0.877);
 }
 
-/* GRID MAIN PAGE */
+/* INDEX / MAIN PAGE FORMATTING */
 
 .wrapper {
     display: grid;
@@ -80,7 +80,7 @@ div.intro {
     /* background-color: aquamarine; */
 }
 
-div.photos {
+div.content {
     grid-area: photos;
     display: flex;
     flex-flow: row wrap;
@@ -89,8 +89,6 @@ div.photos {
     row-gap: 50px;
     /* background-color: bisque; */
 }
-
-/* INDEX / MAIN PAGE FORMATTING */
 
 /* h1 {
     padding-top: 140px;
@@ -110,6 +108,18 @@ img {
 }
 
 /* TABLE / SPECIAL PAGE FORMATTING */
+.wrapper-locations {
+    display: grid;
+    grid-template-rows: 2fr 15fr 30fr ;
+    grid-template-columns: 2fr 8fr;
+    grid-template-areas: "logo nav" "intro intro" "table table";
+}
+
+div.table {
+    grid-area: table;
+    display: flex;
+    justify-content: center;
+}
 
 table {
     padding-top: 50px;
@@ -138,7 +148,6 @@ td {
 }
 
 /* REGISTRATION PAGE FORMATTING */
-
 .flex-container {
     /* setting up level 1 flex container */
     display: flex;
