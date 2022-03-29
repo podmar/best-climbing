@@ -1,5 +1,5 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     /* text-align: center; */
 }
 
@@ -77,7 +77,7 @@ div.intro {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    /* background-color: aquamarine; */
+    background-color: aquamarine;
 }
 
 div.content {
@@ -148,6 +148,23 @@ td {
 }
 
 /* REGISTRATION PAGE FORMATTING */
+.wrapper-register {
+    display: grid;
+    grid-template-rows: 2fr 15fr 30fr 10fr;
+    grid-template-columns: 2fr 8fr ;
+    grid-template-areas: 
+    "nav nav" 
+    "intro intro" 
+    "form form" 
+    "terms terms";
+    background-color: brown;
+}
+
+div.form {
+    grid-area: "form";
+    background-color: chartreuse;
+}
+
 .flex-container {
     /* setting up level 1 flex container */
     display: flex;
@@ -207,6 +224,11 @@ div.submit {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+}
+
+div.terms {
+    grid-area: "terms";
+    background-color: aqua;
 }
 
 li.terms {
