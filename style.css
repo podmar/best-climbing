@@ -1,6 +1,5 @@
 * {
     font-family: 'Roboto', sans-serif;
-    /* font-family:Arial, Helvetica, sans-serif; */
 }
 
 /* FORMATTING THE LOGO TEXT */
@@ -91,15 +90,14 @@ div.content {
     /* background-color: bisque; */
 }
 
-/* h1 {
-    padding-top: 140px;
-} */
+h1 {
+    font-weight: 400;
+}
 
 p.subtitle {
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    font-weight: 400;
-    font-size: medium;
+    font-family:'Paprika', cursive;
+    font-size: smaller;
+    text-align: center;
 }
 
 img {
