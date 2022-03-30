@@ -95,10 +95,11 @@ div.content {
     padding-top: 140px;
 } */
 
-.subtitle {
+p.subtitle {
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
-    /* padding-bottom: 80px; */
+    font-weight: 400;
+    font-size: medium;
 }
 
 img {
@@ -248,15 +249,39 @@ h2.terms {
     padding-bottom: 0px;
 }
 
+/* FORMATTING CONFIRMATION */
+div.wrapper-confirmation {
+    display: grid;
+    grid-template-columns: 2fr 10fr 2fr;
+    grid-template-rows: 2fr 30fr;
+    grid-template-areas: 
+    "logo nav ." 
+    ". intro ." 
+}
+
+
 /* FORMATTING CONTACT */
 
 .wrapper-contact {
     display: grid;
     grid-template-rows: 2fr 15fr 30fr ;
-    grid-template-columns: 2fr 8fr;
-    grid-template-areas: "logo nav" "intro intro" "contact-info contact-info"; 
+    grid-template-columns: 2fr 10fr 2fr;
+    grid-template-areas: 
+    "logo nav ." 
+    ". intro ." 
+    ". contact-info ."; 
 }
 
 div.contact-info {
     grid-area: contact-info;
+    display: flex;
+    flex-direction: column;
 }
+
+p.contact {
+    font-size: smaller;
+    font-weight: 100;
+    text-align: center;
+
+/*  grid-template-rows: 1fr 15fr 10fr;
+    grid-template-columns: 2fr 10fr 2fr; */
