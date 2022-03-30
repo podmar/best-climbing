@@ -64,7 +64,7 @@ a:active {
 
 .wrapper {
     display: grid;
-    grid-template-rows: 1fr 15fr 10fr;
+    grid-template-rows: 1fr 15fr 5fr;
     grid-template-columns: 2fr 10fr 2fr;
     grid-template-areas: "logo nav ." ". intro ." ". photos .";
     /* grid gap not working */
@@ -111,7 +111,7 @@ img {
 /* TABLE / SPECIAL PAGE FORMATTING */
 .wrapper-locations {
     display: grid;
-    grid-template-rows: 2fr 15fr 30fr ;
+    grid-template-rows: 1fr 5fr 7fr ;
     grid-template-columns: 2fr 10fr 2fr;
     grid-template-areas: "logo nav ." ". intro ." ". table .";
 }
@@ -289,7 +289,7 @@ h2.terms {
 div.wrapper-confirmation {
     display: grid;
     grid-template-columns: 2fr 10fr 2fr;
-    grid-template-rows: 2fr 30fr;
+    grid-template-rows: 1fr 15fr;
     grid-template-areas: 
     "logo nav ." 
     ". intro ." 
@@ -300,7 +300,7 @@ div.wrapper-confirmation {
 
 .wrapper-contact {
     display: grid;
-    grid-template-rows: 2fr 15fr 30fr ;
+    grid-template-rows: 1fr 7fr 15fr ;
     grid-template-columns: 2fr 10fr 2fr;
     grid-template-areas: 
     "logo nav ." 
@@ -318,4 +318,10 @@ p.contact {
     font-size: smaller;
     font-weight: 100;
     text-align: center;
+}
+
+/* formats the google map */
+iframe {
+    width: 100%;
+    object-fit: cover;
 }
