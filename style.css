@@ -6,7 +6,7 @@
 
 /* FORMATTING THE LOGO TEXT */
 .logo {
-    grid-area: "logo";
+    grid-area: logo;
 }
 
 p.logo-text {
@@ -162,7 +162,7 @@ td {
 }
 
 div.form {
-    grid-area: "form";
+    grid-area: form;
     background-color: chartreuse;
 }
 
@@ -228,7 +228,7 @@ div.submit {
 }
 
 div.terms {
-    grid-area: "terms";
+    grid-area: terms;
     background-color: aqua;
 }
 
@@ -254,5 +254,5 @@ h2.terms {
 }
 
 div.contact-info {
-    grid-area: "contact-info";
+    grid-area: contact-info;
 }
