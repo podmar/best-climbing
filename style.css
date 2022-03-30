@@ -64,7 +64,7 @@ a:active {
 
 .wrapper {
     display: grid;
-    grid-template-rows: 1fr 15fr 5fr;
+    grid-template-rows: 1fr 10fr 5fr;
     grid-template-columns: 2fr 10fr 2fr;
     grid-template-areas: "logo nav ." ". intro ." ". photos .";
     /* grid gap not working */
