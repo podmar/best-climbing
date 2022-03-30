@@ -1,50 +1,125 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
-ul {
+/* FORMATTING THE LOGO TEXT */
+.logo {
+    grid-area: logo;
+}
+
+p.logo-text {
+    margin: 0px;
+    padding: 0px;
+    font-size: small;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/* FORMATTING THE NAV BAR */
+div.nav-bar {
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+ul.nav-bar {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
     font-size: small;
+    font-weight:100;
 }
 
-li {
+li.nav-bar {
     display: inline;
-    
 }
 
-li a {
+li.nav-bar a {
     text-decoration: none;
     padding: 5px
 }
 
-.logo-text {
-    text-align: left;
-    text-transform: capitalize;
-
+li.active {
+    display: inline;
+    font-weight: bold;
+    padding: 5px
 }
 
-.active {
-    font-weight: bold;
+a:visited {
+    color: inherit;
+}
+
+a:hover {
+    background-color: rgba(194, 200, 206, 0.226);
+    border-radius: 10%;
+}
+
+a:active {
+    color: rgb(95, 95, 95);
+    background-color: rgba(207, 248, 235, 0.877);
+}
+
+/* INDEX / MAIN PAGE FORMATTING */
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 1fr 10fr 5fr;
+    grid-template-columns: 2fr 10fr 2fr;
+    grid-template-areas: "logo nav ." ". intro ." ". photos .";
+    /* grid gap not working */
+    /* grid-gap: 20em; */
+}
+
+div.intro {
+    grid-area: intro;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    /* background-color: aquamarine; */
+}
+
+div.content {
+    grid-area: photos;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    row-gap: 1em;
+    /* background-color: bisque; */
 }
 
 h1 {
-    padding-top: 150px;
+    font-weight: 400;
 }
 
-.subtitle {
-    font-family: 'Times New Roman', Times, serif;
-    font-style: italic;
-    padding-bottom: 80px;
+p.subtitle {
+    font-family:'Paprika', cursive;
+    font-size: smaller;
+    text-align: center;
+    padding-bottom: 3em;
 }
 
 img {
-    width: 250px;
-    height: 180px;
+    width: 24%;
+    height: 70%;
     object-fit: cover;
     border-radius: 3%;
+}
+
+/* TABLE / SPECIAL PAGE FORMATTING */
+.wrapper-locations {
+    display: grid;
+    grid-template-rows: 1fr 5fr 7fr ;
+    grid-template-columns: 2fr 10fr 2fr;
+    grid-template-areas: "logo nav ." ". intro ." ". table .";
+}
+
+div.table {
+    grid-area: table;
+    display: flex;
+    justify-content: center;
 }
 
 table {
@@ -59,6 +134,8 @@ th {
     border-color: white;
     padding: 10px;
     text-align: left;
+    font-size: smaller;
+    font-weight: 400;
     background-color: rgba(155, 156, 156, 0.288);
     color: rgb(95, 95, 95);
 }
@@ -69,44 +146,182 @@ td {
     border-color: white;
     padding: 10px;
     text-align: left;
+    font-size: small;
+    font-weight: 100;
     background-color:rgba(194, 200, 206, 0.226);
     color: rgba(95, 95, 95, 0.63);
 }
 
-.flex-container {
-    display: flex;
-    /* the below sets the 2 blocks on the center of the page */
-    justify-content: center;
+/* REGISTRATION PAGE FORMATTING */
+.wrapper-register {
+    display: grid;
+    grid-template-rows: 1fr 8fr 10fr 5fr;
+    grid-template-columns: 2fr 10fr 2fr;
+    grid-template-areas: 
+    "logo nav ." 
+    ". intro ." 
+    ". form ." 
+    ". terms .";
 }
 
+div.form {
+    grid-area: form;
+}
+
+.flex-container {
+    /* setting up level 1 flex container */
+    display: flex;
+    flex-wrap: wrap;
+    /* the below sets the 2 blocks apart fromm each other with a space between */
+    justify-content:center;
+    gap: 5em;
+}
+
+/* setting up 1/2 level 2 flex container into a column */
 .column-1 {
     display: flex;
     flex-direction: column;
-    /* does nothing */
-    /* text-align: left; */
+    /* align-content: space-between; does nothing*/
+} 
+
+/* setting up 1/2 level 2 flex container into a column */
+.column-2 {
+    display: flex;
+    flex-direction: column;
+    /* align-content: space-between; does nothing */
 }
 
-.column-2 {
+/* formats the input boxes */
+input {
+    border-radius: 0.3em;
+    color: rgba(95, 95, 95, 0.63);
+    border-width: 0em;
+    font-size: small;
+    font-weight: 100;
+    background-color: rgba(194, 200, 206, 0.226);
+    padding: 0.6em;
+}
+
+input.input-box {
+    margin: 0em;
+}
+
+/* makes the text in the labels smaller (checkboxes, radio etc) */
+label {
+    font-size: smaller;
+    font-weight: 100;
+    /* the below moves the one last line in checkbox question about type of news to the left -> commented out after adding a p inside the label*/
+}
+
+/* makes the text in the paragraph labels smaller and aligns it to the left (what news, what type of climbing etc) */
+p.label {
+    font-size: smaller;
+    font-weight: 100;
+    text-align: left;
+}
+
+/* aligns 2 text inputs to the left */
+div.text-input {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* lever 4, aligns the tick-boxes in columns */
+div.tick-box {
+    display: flex;
+    flex-direction:row;
+}
+
+/* formats the drop down choice quistion */
+div.drop-down {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+select {
+    border-radius: 0.3em;
+    background-color: rgba(194, 200, 206, 0.226);
+    color: rgba(95, 95, 95, 0.63);
+    border-width: 0;
+    font-size: small;
+    font-weight: 100;
+    width: 16em;
+    padding: 3%;
+    margin: 0%;
+}
+
+/* formats the location of the submit button */
+div.submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+input.submit-button {
+    font-size: medium;
+    font-weight: 400;
+    color: rgba(95, 95, 95, 0.63);
+    width: 10em;
+    /* padding: 5%;
+    margin: 0%; */
+}
+
+/* styling the terms at the bottom of the page */
+div.terms {
+    grid-area: terms;
+}
+
+li.terms {
+    font-size: x-small;
+    text-align: left;
+    font-weight: 100;
+}
+
+h2.terms {
+    text-align: left;
+    font-weight: 400;
+    font-size: small;
+    padding-bottom: 0px;
+}
+
+/* FORMATTING CONFIRMATION */
+div.wrapper-confirmation {
+    display: grid;
+    grid-template-columns: 2fr 10fr 2fr;
+    grid-template-rows: 1fr 15fr;
+    grid-template-areas: 
+    "logo nav ." 
+    ". intro ." 
+}
+
+
+/* FORMATTING CONTACT */
+
+.wrapper-contact {
+    display: grid;
+    grid-template-rows: 1fr 7fr 15fr ;
+    grid-template-columns: 2fr 10fr 2fr;
+    grid-template-areas: 
+    "logo nav ." 
+    ". intro ." 
+    ". contact-info ."; 
+}
+
+div.contact-info {
+    grid-area: contact-info;
     display: flex;
     flex-direction: column;
 }
 
-label[for] {
-    /* text-align: left; */
-    /* makes the text in the 2 columns smaller */
+p.contact {
     font-size: smaller;
-
+    font-weight: 100;
+    text-align: center;
 }
 
-p.label {
-    text-align: left;
-    font-size: smaller;
+/* formats the google map */
+iframe {
+    width: 100%;
+    object-fit: cover;
 }
-
-/* 
-input {
-    align-items:flex-start;
-    text-align: left;
-    font-size: smaller;
-}  */
-
