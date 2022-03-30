@@ -189,6 +189,20 @@ div.form {
     /* align-content: space-between; does nothing */
 }
 
+/* formats the 2 input boxes */
+input.input-box {
+    border-radius: 5%;
+    border-color: rgba(95, 95, 95, 0.63);
+    color: rgba(95, 95, 95, 0.63);
+    border-width: 0.1em;
+    width: fit-content;
+    font-size: small;
+    font-weight: 100;
+    padding: 3%;
+    margin: 0%;
+
+}
+
 /* makes the text in the labels smaller (checkboxes, radio etc) */
 label {
     font-size: smaller;
@@ -280,6 +294,4 @@ p.contact {
     font-size: smaller;
     font-weight: 100;
     text-align: center;
-
-/*  grid-template-rows: 1fr 15fr 10fr;
-    grid-template-columns: 2fr 10fr 2fr; */
+}
