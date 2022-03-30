@@ -112,8 +112,8 @@ img {
 .wrapper-locations {
     display: grid;
     grid-template-rows: 2fr 15fr 30fr ;
-    grid-template-columns: 2fr 8fr;
-    grid-template-areas: "logo nav" "intro intro" "table table";
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-areas: "logo nav ." ". intro ." ". table .";
 }
 
 div.table {
@@ -134,6 +134,8 @@ th {
     border-color: white;
     padding: 10px;
     text-align: left;
+    font-size: smaller;
+    font-weight: 400;
     background-color: rgba(155, 156, 156, 0.288);
     color: rgb(95, 95, 95);
 }
@@ -144,6 +146,8 @@ td {
     border-color: white;
     padding: 10px;
     text-align: left;
+    font-size: small;
+    font-weight: 100;
     background-color:rgba(194, 200, 206, 0.226);
     color: rgba(95, 95, 95, 0.63);
 }
@@ -160,6 +164,9 @@ td {
     "terms terms";
     background-color: brown;
 }
+
+/*  grid-template-rows: 1fr 15fr 10fr;
+    grid-template-columns: 2fr 10fr 2fr; */
 
 div.form {
     grid-area: form;
