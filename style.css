@@ -98,6 +98,7 @@ p.subtitle {
     font-family:'Paprika', cursive;
     font-size: smaller;
     text-align: center;
+    padding-bottom: 3em;
 }
 
 img {
@@ -154,7 +155,7 @@ td {
 /* REGISTRATION PAGE FORMATTING */
 .wrapper-register {
     display: grid;
-    grid-template-rows: 1fr 10fr 10fr 5fr;
+    grid-template-rows: 1fr 8fr 10fr 5fr;
     grid-template-columns: 2fr 10fr 2fr;
     grid-template-areas: 
     "logo nav ." 
@@ -170,9 +171,10 @@ div.form {
 .flex-container {
     /* setting up level 1 flex container */
     display: flex;
+    flex-wrap: wrap;
     /* the below sets the 2 blocks apart fromm each other with a space between */
     justify-content:center;
-    gap: 10%;
+    gap: 5em;
 }
 
 /* setting up 1/2 level 2 flex container into a column */
@@ -189,18 +191,19 @@ div.form {
     /* align-content: space-between; does nothing */
 }
 
-/* formats the 2 input boxes */
-input.input-box {
-    border-radius: 5%;
-    border-color: rgba(95, 95, 95, 0.63);
+/* formats the input boxes */
+input {
+    border-radius: 0.3em;
     color: rgba(95, 95, 95, 0.63);
-    border-width: 0.1em;
-    width: fit-content;
+    border-width: 0em;
     font-size: small;
     font-weight: 100;
-    padding: 3%;
-    margin: 0%;
+    background-color: rgba(194, 200, 206, 0.226);
+    padding: 0.6em;
+}
 
+input.input-box {
+    margin: 0em;
 }
 
 /* makes the text in the labels smaller (checkboxes, radio etc) */
@@ -208,7 +211,6 @@ label {
     font-size: smaller;
     font-weight: 100;
     /* the below moves the one last line in checkbox question about type of news to the left -> commented out after adding a p inside the label*/
-    /* text-align: left;  */
 }
 
 /* makes the text in the paragraph labels smaller and aligns it to the left (what news, what type of climbing etc) */
@@ -237,6 +239,18 @@ div.drop-down {
     align-items: flex-start; 
 }
 
+select {
+    border-radius: 0.3em;
+    background-color: rgba(194, 200, 206, 0.226);
+    color: rgba(95, 95, 95, 0.63);
+    border-width: 0;
+    font-size: small;
+    font-weight: 100;
+    width: 16em;
+    padding: 3%;
+    margin: 0%;
+}
+
 /* formats the location of the submit button */
 div.submit {
     display: flex;
@@ -244,6 +258,16 @@ div.submit {
     justify-content: flex-end;
 }
 
+input.submit-button {
+    font-size: normal;
+    font-weight: 400;
+    color: rgba(95, 95, 95, 0.63);
+    width: 10em;
+    /* padding: 5%;
+    margin: 0%; */
+}
+
+/* styling the terms at the bottom of the page */
 div.terms {
     grid-area: terms;
 }
