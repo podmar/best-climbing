@@ -1,7 +1,6 @@
 * {
-    /* font-family: 'Roboto', sans-serif; */
-    font-family:Arial, Helvetica, sans-serif;
-    /* text-align: center; */
+    font-family: 'Roboto', sans-serif;
+    /* font-family:Arial, Helvetica, sans-serif; */
 }
 
 /* FORMATTING THE LOGO TEXT */
@@ -14,12 +13,12 @@ p.logo-text {
     padding: 0px;
     font-size: small;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 /* FORMATTING THE NAV BAR */
 div.nav-bar {
-    grid-area: "nav";
+    grid-area: nav;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -30,6 +29,7 @@ ul.nav-bar {
     margin: 0px;
     padding: 0px;
     font-size: small;
+    font-weight:100;
 }
 
 li.nav-bar {
@@ -65,9 +65,9 @@ a:active {
 
 .wrapper {
     display: grid;
-    grid-template-rows: 1fr 15fr 15fr ;
-    grid-template-columns: 2fr 8fr;
-    grid-template-areas: "logo nav" "intro intro" "photos photos";
+    grid-template-rows: 1fr 15fr 10fr;
+    grid-template-columns: 2fr 10fr 2fr;
+    grid-template-areas: "logo nav ." ". intro ." ". photos .";
     /* grid gap not working */
     /* grid-gap: 20em; */
 }
@@ -78,16 +78,16 @@ div.intro {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 
 div.content {
     grid-area: photos;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-end;
-    row-gap: 50px;
+    row-gap: 1em;
     /* background-color: bisque; */
 }
 
@@ -102,8 +102,8 @@ div.content {
 }
 
 img {
-    width: 230px;
-    height: 150px;
+    width: 24%;
+    height: 70%;
     object-fit: cover;
     border-radius: 3%;
 }
